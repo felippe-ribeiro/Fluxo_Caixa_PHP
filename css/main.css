@@ -1,0 +1,712 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+   
+@font-face {
+    font-family: 'robotobold';
+    src: url('../fonts/roboto/roboto-bold-webfont.eot');
+    src: url('../fonts/roboto/roboto-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/roboto-bold-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-bold-webfont.woff') format('woff'),
+         url('../fonts/roboto/roboto-bold-webfont.ttf') format('truetype'),
+         url('../fonts/roboto/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto/roboto-regular-webfont.eot');
+    src: url('../fonts/roboto/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../fonts/roboto/roboto-regular-webfont.woff') format('woff'),
+         url('../fonts/roboto/roboto-regular-webfont.ttf') format('truetype'),
+         url('../fonts/roboto/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ==========================================================================
+   Livro caixa
+   ========================================================================== */
+
+html, body {width:100%; height:100%; display:inline-block; background-color:#e3e3e3}
+footer {width:99%; padding:1% 1% 1% 0; background:#FFF; position:absolute; bottom:0; text-align:right; font-size:13px; color:#676767; left:0}
+#content {min-height: 100%}
+body {background:#e3e3e3}
+#titulo_topo {text-transform:uppercase; color:#1255a6; font-size:25px; float:left; margin: 20px 0 0 45px;}
+#topo {width: 790px; height: 77px; background-color: #FFF; border-bottom: 1px solid #cccccc}
+#topo	#btns_acoes {float: right; margin: 24px 25px 0 0}
+.btn_editar {width:12px; height:12px; background:url(../img/all/bg_images.png) no-repeat -9px -203px; display:inline-block; margin-left:5px}
+.btn_excluir {width:12px; height:12px; background:url(../img/all/bg_images.png) no-repeat -9px -235px; display:inline-block; margin-left:5px}
+.padraoBotao {background-color:#6ddb9c; font-size:14px; color:#FFF; border-bottom:2px solid #57af7d; text-decoration:none; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; padding:6px 21px}
+.padraoBotao:hover {border-bottom:2px solid #6ddb9c}
+.padraoBotaoDefault {background-color:#bebebe; font-size:14px; color:#FFF; border-bottom:2px solid #989898; text-decoration:none; -webkit-border-radius: 20px; -moz-border-radius: 20px; border-radius: 20px; padding:6px 21px}
+.padraoBotaoDefault:hover {border-bottom:2px solid #bebebe}
+.inputBoxLeft {border:1px solid #d4dadf; -webkit-border-top-left-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-bottomleft: 5px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; padding: 9px 10px 9px 10px; margin-right: -6px; background-color: #FFF; position: relative; color: #999999; font-size: 14px}
+.btn_icone {padding:8px 18px 7px 18px; background-color:#6ddb9c; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; border-bottom:2px solid #57af7d; margin-right: -36px; position: relative}
+.btn_icone:hover {border-bottom:2px solid #6ddb9c}
+.calendario_ico {background:url(../img/all/bg_images.png) no-repeat 2px -259px #6ddb9c}
+.padraoInput {border:1px solid #d4dadf; padding:10px 10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; font-size:13px}
+
+#bodyLogin {background:url(../img/login/back.jpg) no-repeat top center; height:100%; background-size:cover; font-family: 'robotoregular', sans-serif}
+#bodyLogin	header {width:100%; background:url(../img/login/bg_transparent.png) repeat-x; height:270px}
+#bodyLogin	header	.conteudo {width:990px; margin:auto; text-align:left}
+#bodyLogin	header	#logoSistema {margin:54px 0 0 59px}
+#bodyLogin	header	time {color:#FFF; width:130px; display:block; float:right; margin:54px 59px 0 0}
+#bodyLogin	header	time	.dia {font-size:52px; float:left; letter-spacing:-3px; margin-right:10px}
+#bodyLogin	header	time	.mes {font-size:25px; float:left; margin:9px 0 -11px 0}
+#bodyLogin	header	time	.ano {font-size:22px; float:left}
+#bodyLogin	#login {width:990px; margin:auto; text-align:left; margin-top:-124px; padding-bottom:60px}
+#bodyLogin	#login	.error_login {font-size: 11px; color: #FFF; background-color: #C00003; text-align: center; padding: 5px; margin: 10px 0 -8px 0}
+#bodyLogin	#formLogin {background:#FFF; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; width:310px; height:auto; padding:30px 30px 32px 30px; -moz-box-shadow:2px 2px 10px -5px #000; -webkit-box-shadow: 2px 2px 10px -5px #000; box-shadow:2px 2px 10px -5px #000; margin-left:59px}
+#bodyLogin	#formLogin	input {width:270px; padding:18px 20px; font-family: 'robotoregular', sans-serif}
+#bodyLogin	#formLogin	input[name="login"] {border:1px solid #d0dded; -webkit-border-top-left-radius: 5px; -webkit-border-top-right-radius: 5px; -moz-border-radius-topleft: 5px; -moz-border-radius-topright: 5px; border-top-left-radius: 5px; border-top-right-radius: 5px; background:url(../img/login/ico_usuario.png) no-repeat 270px center}
+#bodyLogin	#formLogin	input[name="senha"] {border:1px solid #d0dded; margin-top:-1px;-webkit-border-bottom-right-radius: 5px; -webkit-border-bottom-left-radius: 5px; -moz-border-radius-bottomright: 5px; -moz-border-radius-bottomleft: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; background:url(../img/login/ico_senha.png) no-repeat 270px center}
+#bodyLogin	#formLogin	input[type="submit"] {background-color:#1255a6; color:#FFFFFF; border:none; border-bottom:3px solid #0e4485; width:312px; margin-top:18px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; font-family: 'robotobold', sans-serif; padding:15px 0; text-align:center}
+#bodyLogin	#formLogin	input[type="submit"]:hover {background:#1a5cac}
+
+/*All*/
+body {text-align:center; font-family:"robotoregular", Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif}
+footer {display:none}
+#content {width:990px; margin:auto}
+#content.pageLogin {width:100%}
+#content	.col_esq {float:left; width:200px; background-color:#34495e}
+#content	.col_dir {float:left}
+#content	.col_esq	#logoSistema {background-color: #1255a6; padding: 25px 22px}
+#content	.col_esq	ul {list-style:none; margin:0; padding:0}
+#content	.col_esq	ul	li {text-align:left; margin:0; padding:0}
+#content	.col_esq	ul	a {color:#95a5a6; text-decoration:none; padding:22px 20px; display:block}
+#content	.col_esq	ul	a:hover  {background-color:#243342; color:#FFF}
+header {width:790px; height:90px}
+header	#perfil_foto {border:2px solid #d3d6da; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; width: 65px; height: 65px; margin: 8px 0 0 18px; float: left}
+header	time {color:#1255a6; width:130px; display:block; float:right; margin:6px 14px 0 0}
+header	time	.dia {font-size:52px; float:left; letter-spacing:-3px; margin-right:10px}
+header	time	.mes {font-size:25px; float:left; margin:9px 0 -11px 0}
+header	time	.ano {font-size:22px; float:left}
+header	#editarPerfil {width: 40px; height: 40px;border: 2px solid #bfc3c9; background: url(../img/all/bg_images.png) no-repeat 5px -121px; display: block; float: left; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; margin: 20px 0 0 17px}
+header	#editarPerfil:hover {background-color:#2ecc71; border-color:#2ecc71; background-position:-31px -121px}
+header	#btnSair {width: 40px; height: 40px;border: 2px solid #bfc3c9; background: url(../img/all/bg_images.png) no-repeat 5px -157px; display: block; float: left; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; margin: 20px 0 0 12px}
+header	#btnSair:hover {background-color:#2ecc71; border-color:#2ecc71; background-position:-31px -157px}
+.form_cadastro {background:#FFF; margin:22px 0 0 46px; font-size:15px; padding:21px 11px; color:#626262; width:546px}
+.form_cadastro	input[type="text"], .form_cadastro	input[type="password"] {border:1px solid #d4dadf; padding:10px; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; margin-left:10px}
+.form_cadastro	input[type="submit"] {border-top:none; border-left:none; border-right:none; margin-left:18px}
+.btn_menu_principal { background:url(../img/all/bg_images.png) no-repeat 0 0; width: 34px; height: 26px; float: left; margin: 0 14px 0 11px}
+#menu_icon_fluxo {background-position:0px 0px}
+#menu_icon_contas {background-position:0px -40px}
+#menu_icon_relatorios {background-position:0px -90px}
+#menu_icon_usuarios {background-position:0px -561px}
+#menuPrincipal	a:hover #menu_icon_fluxo, #menuPrincipal	a.ativo #menu_icon_fluxo {background-position:-36px 0px}
+#menuPrincipal	a:hover #menu_icon_contas, #menuPrincipal	a.ativo #menu_icon_contas {background-position:-36px -40px}
+#menuPrincipal	a:hover #menu_icon_relatorios, #menuPrincipal	a.ativo #menu_icon_relatorios {background-position:-36px -90px}
+#menuPrincipal	a:hover #menu_icon_usuarios, #menuPrincipal	a.ativo #menu_icon_usuarios {background-position:-36px -561px}
+#menuPrincipal	a.ativo {background-color:#243342; color:#FFF}
+.mensagem {position:fixed; top:-53px; left:0; width:100%; padding:15px 0; color:#FFFFFF}
+.mensagem.erro {background-color:#c60f13}
+.mensagem.sucesso {background-color:#5da424}
+
+/*Principal*/
+#bodyPrincipal	.box_info {width:325px; float:left}
+#bodyPrincipal	.box_info	.title_top {font-size:20px; text-transform:uppercase; background-color:#FFF; font-weight:normal; text-align:left; line-height:18px; margin:45px 0 0 38px; padding:25px 29px 21px 23px; width:200px; height:30px}
+#bodyPrincipal	.box_info#entradas_mes .title_top {color:#27ae60}
+#bodyPrincipal	.box_info#balanco_geral .title_top {color:#1255a6}
+#bodyPrincipal	.box_info#balanco_geral {margin:0 0 44px 70px}
+#bodyPrincipal	.box_info	table {background-color:#FFF; margin-left:38px; width:325px; font-size:14px; text-align:left; color:#7f8c8d}
+#bodyPrincipal	.box_info	table	.valor {text-align:right; padding-right:20px}
+#bodyPrincipal	.box_info	table	.resultado {font-size:20px; color:#505758}
+#bodyPrincipal	.box_info#entradas_mes	table	.resultado {background-color:#badfca}
+#bodyPrincipal	.box_info#balanco_geral	table	.resultado {background-color:#ccd8e7}
+#bodyPrincipal	.box_info	table	tr {border-bottom:1px solid #dee1e2}
+#bodyPrincipal	.box_info	table	td {padding:17px 0 17px 25px}
+#bodyPrincipal	#movimentos {background-color:#FFF; width:720px; margin:0 0 100px 38px; clear:both}
+#bodyPrincipal	#movimentos	#header_movimento {text-align:left; padding:20px 24px; border-bottom:1px solid #dee1e2}
+#bodyPrincipal	#movimentos	#header_movimento	span {text-transform:uppercase; font-size:20px; color:#1255a6}
+#bodyPrincipal	#movimentos	#header_movimento	select {float:right; font-size:13px; color:#7e7e7e; margin-top:5px}
+#bodyPrincipal	#movimentos	#header_movimento	select	.opt_filtrar {display:none}
+#bodyPrincipal	#movimentos	#header_movimento	.formfiltrar {display:inline}
+#bodyPrincipal	#movimentos	#lista_movimento {list-style:none; text-align:left; padding:0; margin:0; clear:both}
+#bodyPrincipal	#movimentos	#lista_movimento	li {margin: 0 25px; padding: 10px 0; font-size:14px; border-bottom:1px solid #dee1e2; color:#2c3e50}
+#bodyPrincipal	#movimentos	#lista_movimento	li.ultimo_li {border-bottom-width: 11px; width: 670px; padding-bottom: 33px; margin-bottom:-11px!important}
+#bodyPrincipal	#movimentos	#lista_movimento	li	a {color:#3498db; text-decoration:none}
+#bodyPrincipal	#movimentos	#lista_movimento	li	a:hover {color:#3498db; text-decoration:underline}
+#bodyPrincipal	#movimentos	#lista_movimento	li	.valor_direita {float:right}
+#bodyPrincipal	#movimentos	#lista_movimento	li	.valor_direita.positivo {color:#3d8e5a}
+#bodyPrincipal	#movimentos	#lista_movimento	li	.valor_direita.negativo {color:#952c27}
+#bodyPrincipal	#movimentos	#lista_movimento	#total_movimento {font-size:25px; color:#505758; text-align:right; border-bottom:none; padding:20px 0}
+#bodyPrincipal	#movimentos	#lista_movimento	.form_editar {display:none; padding-left:0; margin-left:0; padding-bottom:0}
+#bodyPrincipal	#movimentos	#lista_movimento	.form_editar	ul {width: 630px; padding: 0}
+#bodyPrincipal	#movimentos	#lista_movimento	.form_editar	li {margin:0}
+#bodyPrincipal	#movimentos	#lista_movimento	.form_editar	li	.padraoBotao{margin-left:118px}
+#bodyPrincipal	#movimentos	#lista_movimento	.form_editar	li	input {padding-top:11px}
+#calendario {width:790px; height:109px; background-color:#FFF; border-bottom:1px solid #cccccc}
+#calendario	#content_select_ano {float:left; margin:30px 0 0 45px; position:relative}
+#calendario	#content_select_ano	#ano_selected {font-size:30px; font-family:"robotobold", Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif; color:#27ae60; font-size:30px; text-decoration:none; width: 102px; display: block; text-align: left; background: url('../img/all/bg_images.png') no-repeat 75px -309px}
+#calendario	#content_select_ano	#ano_selected.listaAtiva {background-position:75px -375px}
+#calendario	#content_select_ano	ul {list-style:none; margin:0; padding:0; background-color:#FFF; height:200px; width:100px; overflow:auto; border: 1px solid #CCC; position: absolute; top: 41px; left: 0; display:none}
+#calendario	#content_select_ano	ul	li {border-bottom:1px solid #C4C4C4}
+#calendario	#content_select_ano	ul	li	a {padding:10px 20px; display:block; text-decoration:none; color:#727272}
+#calendario	#content_select_ano	ul	li	a:hover {text-decoration:none; color:#000; background-color:#D9D9D9}
+#calendario	#btns_acoes {margin:39px 30px 18px 0; float:right}
+#calendario	#radio_meses {width:100%; clear:both}
+#calendario #radio_meses	a {color:#2c3e50; text-decoration:none; font-size:17px; padding:3px 0; margin:0 12px}
+#calendario #radio_meses	a:hover {border-bottom:4px solid #27ae60}
+#calendario #radio_meses	a.mesAtual {border-bottom:4px solid #27ae60}
+#bodyPrincipal	form.form_cadastro {text-align:left}
+#bodyPrincipal	form.form_cadastro	label {width:100px; text-align:right; display:inline-block; margin-right: 15px}
+#bodyPrincipal	form.form_cadastro	ul {list-style:none; padding:0 18px; margin:-20px 0 0 0}
+#bodyPrincipal	form.form_cadastro	li {border-bottom:1px dotted #cccccc; padding:20px 0}
+#bodyPrincipal	form.form_cadastro	input[type="text"] {border:1px solid #d4dadf; margin-left:0}
+#bodyPrincipal	form.form_cadastro	select {border:1px solid #d4dadf; width: 390px; height: 40px}
+#bodyPrincipal	form.form_cadastro	textarea {border:1px solid #d4dadf; width: 384px; height: 100px}
+#bodyPrincipal	form.form_cadastro	input[name="valor"] {width:331px}
+#bodyPrincipal	form.form_cadastro input[name="descricao"] {width:368px}
+#bodyPrincipal	form.form_cadastro	.receita {color:#359c61; font-family:'robotobold', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif; margin-right:25px}
+#bodyPrincipal	form.form_cadastro	.despesa {color:#a83838; font-family:'robotobold', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
+#bodyPrincipal	form.form_cadastro	input[name="data"] {width:333px; padding-left: 46px}
+#bodyPrincipal	form.form_cadastro	ul	li:last-child {border-bottom:none}
+#bodyPrincipal	form.form_cadastro	.padraoBotao {margin-left:136px; text-align: left; width: 160px}
+#bodyPrincipal	form.form_cadastro	.padraoBotaoDefault {float:right; margin-right:20px}
+
+/*Adicionar categoria*/
+#bodyAddCategoria	input#nome {width:321px}
+#bodyAddCategoria	ul#lista_categorias {width: 528px; background: #FFF; margin-left: 46px; font-size:14px; list-style:none; padding: 10px 20px}
+#bodyAddCategoria	ul#lista_categorias	li {text-align: left; padding: 10px 0; border-bottom: 1px solid #dee1e2}
+#bodyAddCategoria	ul#lista_categorias	li:last-child {border-bottom:none}
+#bodyAddCategoria	ul#lista_categorias	.btn_editar {float:right; margin-right:15px}
+#bodyAddCategoria	ul#lista_categorias	.btn_excluir {float:right}
+
+/*Adicionar movimento*/
+#bodyAddMovimento	form.form_cadastro {text-align:left}
+#bodyAddMovimento	form.form_cadastro	label {width:100px; text-align:right; display:inline-block; margin-right: 15px}
+#bodyAddMovimento	form.form_cadastro	ul {list-style:none; padding:0 18px; margin:-20px 0 0 0}
+#bodyAddMovimento	form.form_cadastro	li {border-bottom:1px dotted #cccccc; padding:20px 0}
+#bodyAddMovimento	form.form_cadastro	input[type="text"] {border:1px solid #d4dadf; margin-left:0}
+#bodyAddMovimento	form.form_cadastro	select {border:1px solid #d4dadf; width: 390px; height: 40px}
+#bodyAddMovimento	form.form_cadastro	textarea {border:1px solid #d4dadf; width: 384px; height: 100px}
+#bodyAddMovimento	form.form_cadastro	input[name="valor"] {width:331px}
+#bodyAddMovimento	form.form_cadastro input[name="descricao"] {width:368px}
+#bodyAddMovimento	form.form_cadastro	.receita {color:#359c61; font-family:'robotobold', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif; margin-right:25px}
+#bodyAddMovimento	form.form_cadastro	.despesa {color:#a83838; font-family:'robotobold', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
+#bodyAddMovimento	form.form_cadastro	input[name="data"] {width:333px; padding-left: 46px}
+#bodyAddMovimento	form.form_cadastro	ul	li:last-child {border-bottom:none}
+#bodyAddMovimento	form.form_cadastro	.padraoBotao {margin-left:136px; text-align: left; width: 160px}
+#bodyAddMovimento	form.form_cadastro	.padraoBotaoDefault {float:right; margin-right:20px}
+
+/* Contas */
+#ger_contas {background:#FFF; margin:22px 0 20px 46px; font-size:15px; padding:21px 11px 0 11px; color:#626262; width:695px}
+#ger_contas	#text_buscar {height:7px; width:340px; margin: 0 6px 0 0}
+#ger_contas	select {height: 30px; width: 153px; padding: 6px}
+#ger_contas	select[name="filtrar_por"] {margin:0 8px 0 2px}
+#ger_contas	ul {list-style:none; margin: 20px 0 0 -11px; padding:0 0 1px 0; width: 717px; background-color:#dee1e2}
+#ger_contas	ul	li {margin-bottom: 1px; font-size: 14px; color:#2c3e50; padding: 13px 10px 13px 20px; text-align: left}
+#ger_contas	ul	li.atrasado {background-color:#ffdbdb; border-bottom: 1px solid #FFF; margin-bottom: 0px}
+#ger_contas	ul	li.nodia {background-color:#fff6a7; border-bottom: 1px solid #FFF; margin-bottom: 0px}
+#ger_contas	ul	li.emdia {background-color:#FFF}
+#ger_contas	ul	li.pago {text-decoration:line-through; background-color:#FFF}
+#ger_contas	ul	li.credito {border-left:4px solid #3d8e5a}
+#ger_contas	ul	li.debito {border-left:4px solid #952c27}
+#ger_contas	ul	li	span.atrasado {color:#b82828}
+#ger_contas	ul	li	span.nodia {color:#3498db}
+#ger_contas	ul	li	span.emdia {color:#3498db}
+#ger_contas	ul	li	span.valor {font-size:16px; float:right}
+#ger_contas	ul	li.pago	.valor {margin-right:62px}
+#ger_contas	ul	li	span.credito {color:#3d8e5a}
+#ger_contas	ul	li	span.debito {color:#952c27}
+#ger_contas	ul	li	a.btn_pago {background-color:#6ddb9c; padding:5px 12px; text-decoration:none; font-size:11px; color:#ffffff; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; border-bottom:2px solid #57af7d; float:right; margin:-4px 0 0 11px}
+#ger_contas	ul	li	a.btn_pago:hover {border-bottom-color:#6ddb9c}
+#ger_contas	ul	li	form.formPagaConta {display:none}
+#ger_contas	a.mostra_mais {margin:50px 0}
+
+/*Cadastrar conta*/
+#bodyAddconta	form.form_cadastro {text-align:left; display:none}
+#bodyAddconta	form.form_cadastro#aReceberForm {display:block}
+#bodyAddconta	form.form_cadastro	label {width:110px; text-align:right; display:inline-block; margin-right: 15px}
+#bodyAddconta	form.form_cadastro	.select_check {display:inline}
+#bodyAddconta	form.form_cadastro	ul {list-style:none; padding:0 18px; margin:-20px 0 0 0}
+#bodyAddconta	form.form_cadastro	li {border-bottom:1px dotted #cccccc; padding:20px 0}
+#bodyAddconta	form.form_cadastro	input[type="text"] {border:1px solid #d4dadf; margin-left:0}
+#bodyAddconta	form.form_cadastro	input[type="password"] {border:1px solid #d4dadf; margin-left:0}
+#bodyAddconta	form.form_cadastro	input[type="checkbox"] {margin-left:15px}
+#bodyAddconta	form.form_cadastro	select {border:1px solid #d4dadf; width: 380px; height: 40px}
+#bodyAddconta	form.form_cadastro	textarea {border:1px solid #d4dadf; width: 374px; height: 100px}
+#bodyAddconta	form.form_cadastro	input[name="valor"] {width:321px}
+#bodyAddconta	form.form_cadastro	input.data_pagamento {width: 160px; padding-left: 44px}
+#bodyAddconta	form.form_cadastro	.receita {color:#359c61; font-family:'robotobold', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif; margin-right:25px}
+#bodyAddconta	form.form_cadastro	.despesa {color:#a83838; font-family:'robotobold', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
+#bodyAddconta	form.form_cadastro	input[name="data"] {width:323px; padding-left: 46px}
+#bodyAddconta	form.form_cadastro	ul	li:last-child {border-bottom:none}
+#bodyAddconta	form.form_cadastro	.padraoBotao {margin-left:146px; text-align: left; width: 160px}
+#bodyAddconta	form.form_cadastro	.padraoBotaoDefault {float:right; margin-right:20px}
+#bodyAddconta	#cadastrar_conta {padding-top:60px}
+#bodyAddconta	#cadastrar_conta	.botao_toggle {padding:30px 60px; text-transform:uppercase}
+#bodyAddconta	#cadastrar_conta	.botao_toggle.ativo {background-color:#FFF}
+#bodyAddconta	#cadastrar_conta	#aReceber {color:#359c61; text-decoration:none; font-size:20px}
+#bodyAddconta	#cadastrar_conta	#aPagar {color:#a83838; text-decoration:none; font-size:20px; margin-right: 130px; padding: 30px 58px}
+
+/* Relatórios */
+#movimentosRelatorio	ul {list-style:none; margin:0; padding:0 0 1px 0; background-color:#FFF}
+#movimentosRelatorio	ul	li {margin-bottom: 1px; font-size: 14px; color:#2c3e50; padding: 13px 10px 13px 20px; text-align: left; border-bottom: 1px solid #dee1e2}
+#movimentosRelatorio	ul	li.atrasado {background-color:#ffdbdb; border-bottom: 1px solid #FFF; margin-bottom: 0px}
+#movimentosRelatorio	ul	li.nodia {background-color:#fff6a7; border-bottom: 1px solid #FFF; margin-bottom: 0px}
+#movimentosRelatorio	ul	li.emdia {background-color:#FFF}
+#movimentosRelatorio	ul	li.pago {text-decoration:line-through; background-color:#FFF}
+#movimentosRelatorio	ul	li	span.atrasado {color:#b82828}
+#movimentosRelatorio	ul	li	span.nodia {color:#3498db}
+#movimentosRelatorio	ul	li	span.emdia {color:#3498db}
+#movimentosRelatorio	ul	li	span.valor {font-size:16px; float:right}
+#movimentosRelatorio	ul	li.pago	.valor {margin-right:62px}
+#movimentosRelatorio	ul	li	span.credito {color:#3d8e5a}
+#movimentosRelatorio	ul	li	span.debito {color:#952c27}
+#movimentosRelatorio	ul	li	a.btn_pago {background-color:#6ddb9c; padding:5px 12px; text-decoration:none; font-size:11px; color:#ffffff; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; border-bottom:2px solid #57af7d; float:right; margin:-4px 0 0 11px}
+#movimentosRelatorio	ul	li	a.btn_pago:hover {border-bottom-color:#6ddb9c}
+#movimentosRelatorio	a.mostra_mais {margin:50px 0}
+#movimentosRelatorio	#topoMovimento {font-size: 20px; text-transform: uppercase; color: #1255a6; text-align: left; padding: 20px 20px 20px 20px; border-bottom: 1px solid #dee1e2}
+#movimentosRelatorio	#totalMovimento {color:#505758; font-size:25px; text-align:right; padding:10px 10px}
+#bodyRelatorios		#topo	#titulo_topo {text-transform:none; font-size:18px; font-family:'robotobold', Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif}
+#bodyRelatorios		#topo	#titulo_topo	.dea {color:#27ae60}
+#bodyRelatorios		#topo	#titulo_topo {color:#acacac}
+#bodyRelatorios		#topo	#titulo_topo	a.calendario_ico {background: url(../img/all/bg_images.png) no-repeat 1px -260px #6ddb9c;
+ width: 34px;height: 34px; display: inline-block; border-bottom:1px solid #57af7d; margin:0 10px 0 5px; vertical-align: middle; -webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px}
+#bodyRelatorios		#topo	#titulo_topo	select {width:150px; font-size:13px; height:30px; border:1px solid #c9c9c9; padding:0 0 0 5px; color:#7e7e7e}
+#bodyRelatorios	#receitaDespesa {background-color:#FFF; margin:32px 0 0 46px; width:710px}
+#bodyRelatorios	#movimentosRelatorio {background-color:#FFF; margin:36px 0 50px 46px; width:710px}
+#bodyRelatorios	#barchart_material {width: 676px; height: 322px; padding:17px}
+#bodyRelatorios	#filtro_mes	input {width:0; height:0; background:none; border:none}
+#bodyRelatorios	#filtro_mes	select {margin: -32px -188px 0 0; float: right}
+#btn_imprimir {background: url(../img/all/bg_images.png) no-repeat 1px -634px #6ddb9c; width: 34px; height: 34px; display: inline-block; border-bottom: 1px solid #57af7d; margin: 20px 21px 0 5px; vertical-align: middle; -webkit-border-radius: 50px;-moz-border-radius: 50px; border-radius: 50px; float:right}
+
+@media print{
+	#bodyRelatorios .col_esq, #bodyRelatorios header, #bodyRelatorios #btnDataInicio, #bodyRelatorios #btnDataFinal, #bodyRelatorios  #filtro_mes {display:none!important}
+	#bodyRelatorios	.col_dir, #bodyRelatorios	#movimentosRelatorio, #bodyRelatorios	#receitaDespesa, #bodyRelatorios #topo {width:100%!important; margin:0!important}
+	#bodyRelatorios	#receitaDespesa {text-align:center}
+	#bodyRelatorios	#barchart_material {margin:auto}
+	#btn_imprimir {display:none}
+}
+
+/* Editar categoria */
+#bodyAddCategoria	form.editar_categoria {display:none; }
+#bodyAddCategoria	input[type="submit"] {border-top:none; border-left:none; border-right:none; margin-left:18px}
+#bodyAddCategoria	.adicione_categoria {display: block; margin: 80px auto; width: 430px}
+
+
+
+/* Usuários */
+#ger_usuarios {background:#FFF; margin:22px 0 20px 46px; font-size:15px; padding:0 11px 0 11px; color:#626262; width:695px}
+#ger_usuarios	ul {list-style:none; margin: 20px 0 0 -11px; padding:0 0 1px 0; width: 717px; background-color:#dee1e2}
+#ger_usuarios	ul	li {margin-bottom: 1px; font-size: 14px; color:#2c3e50; padding: 13px 10px 13px 20px; text-align: left; background-color: #FFF;}
+#ger_usuarios	ul	li	.strong_primary {text-transform:capitalize}
+#ger_usuarios	ul	li	a.btn_editar_usuario {background-color:#6ddb9c; padding:5px 12px; text-decoration:none; font-size:11px; color:#ffffff; -webkit-border-radius: 30px; -moz-border-radius: 30px; border-radius: 30px; border-bottom:2px solid #57af7d; float:right; margin:-4px 0 0 11px}
+#ger_usuarios	ul	li	a.btn_editar_usuario:hover {border-bottom-color:#6ddb9c}
+#ger_usuarios	ul	li	a.excluir_btn {background-color:#C70000; border-bottom-color:#860000}
+#ger_usuarios	ul	li	a.excluir_btn:hover {border-bottom-color:#C70000}
+
+
+
+
+
+
+
+
+
+
+/*Datepicker*/
+.ll-skin-melon {
+	font-size: 90%;
+}
+
+.ll-skin-melon .ui-widget {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+	background: #2e3641;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.ll-skin-melon .ui-datepicker {
+	padding: 0;
+}
+
+.ll-skin-melon .ui-datepicker-header {
+	border: none;
+	background: transparent;
+	font-weight: normal;
+	font-size: 15px;
+}
+
+.ll-skin-melon .ui-datepicker-header .ui-state-hover {
+	background: transparent;
+	border-color: transparent;
+	cursor: pointer;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+
+.ll-skin-melon .ui-datepicker .ui-datepicker-title {
+	margin-top: .4em;
+	margin-bottom: .3em;
+	color: #e9f0f4;
+}
+
+.ll-skin-melon .ui-datepicker .ui-datepicker-prev-hover,
+.ll-skin-melon .ui-datepicker .ui-datepicker-next-hover,
+.ll-skin-melon .ui-datepicker .ui-datepicker-next,
+.ll-skin-melon .ui-datepicker .ui-datepicker-prev {
+	top: .9em;
+	border:none;
+}
+
+.ll-skin-melon .ui-datepicker .ui-datepicker-prev-hover {
+	left: 2px;
+}
+
+.ll-skin-melon .ui-datepicker .ui-datepicker-next-hover {
+	right: 2px;
+}
+
+.ll-skin-melon .ui-datepicker .ui-datepicker-next span,
+.ll-skin-melon .ui-datepicker .ui-datepicker-prev span {
+	background-image: url(images/ui-icons_ffffff_256x240.png);
+	background-position: -32px 0;
+	margin-top: 0;
+	top: 0;
+	font-weight: normal;
+}
+
+.ll-skin-melon .ui-datepicker .ui-datepicker-prev span {
+	background-position: -96px 0;
+}
+
+.ll-skin-melon .ui-datepicker table {
+	margin: 0;
+}
+
+.ll-skin-melon .ui-datepicker th {
+	padding: 1em 0;
+	color: #ccc;
+	font-size: 13px;
+	font-weight: normal;
+	border: none;
+	border-top: 1px solid #3a414d;
+}
+
+.ll-skin-melon .ui-datepicker td {
+	background: #f97e76;
+	border: none;
+	padding: 0;
+}
+
+.ll-skin-melon td .ui-state-default {
+	background: transparent;
+	border: none;
+	text-align: center;
+	padding: .5em;
+	margin: 0;
+	font-weight: normal;
+	color: #efefef;
+	font-size: 16px;
+}
+
+.ll-skin-melon .ui-state-disabled  {
+	opacity: 1;
+}
+
+.ll-skin-melon .ui-state-disabled .ui-state-default {
+	color: #fba49e;
+}
+
+.ll-skin-melon td .ui-state-active,
+.ll-skin-melon td .ui-state-hover {
+	background: #2e3641;
+}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

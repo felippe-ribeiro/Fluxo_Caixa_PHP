@@ -1,0 +1,4 @@
+senha padrão dos usuarios
+superadmin@email.com - mudar - superadm
+gestor@email.com - mudar - gestor
+administrador@email.com - mudar - administrador
